@@ -7,12 +7,13 @@
   <meta property="og:title" content="Deuda Injusta | Radiografía pública del CAE">
   <meta property="og:description" content="No hay pago justo ante una deuda injusta. Datos públicos sobre deuda, morosidad, territorio, banca y Estado.">
   <title>Deuda Injusta | Radiografía pública del CAE</title>
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="enhancements.css?v=1">
 </head>
 <body>
   <header class="topbar">
     <a class="brand" href="#inicio"><span>DI</span> Deuda Injusta</a>
-    <nav aria-label="Secciones"><a href="#territorio">Territorio</a><a href="#instituciones">Instituciones</a><a href="#estado">Estado y banca</a><a href="#metodologia">Metodología</a></nav>
+    <nav aria-label="Secciones"><a href="#actualizacion">Actualización</a><a href="#territorio">Territorio</a><a href="#instituciones">Instituciones</a><a href="#estado">Estado y banca</a><a href="#metodologia">Metodología</a></nav>
   </header>
 
   <main>
@@ -24,6 +25,11 @@
         <div class="hero-actions"><a class="button" href="#territorio">Explorar los datos</a><a class="text-link" href="#metodologia">Cómo leerlos →</a></div>
       </div>
       <aside class="claim"><span class="claim-number" id="hero-rate">—</span><p>de quienes están en etapa de pago presenta morosidad.</p></aside>
+    </section>
+
+    <section class="freshness" aria-label="Fecha de actualización por módulo">
+      <p><b>La actualidad no es una sola fecha.</b> Cada módulo conserva el último corte comparable disponible.</p>
+      <div class="freshness-grid"><span><b>Deuda y territorio</b><small>Diciembre de 2023</small></span><span><b>Contexto socioeconómico</b><small>CASEN 2022; fuentes 2024 disponibles</small></span><span><b>Perfil y cohortes CAE</b><small>Junio de 2025</small></span><span><b>Matrícula y beneficios</b><small>2024–2025</small></span></div>
     </section>
 
     <section class="kpi-grid" aria-label="Indicadores principales">
@@ -45,14 +51,21 @@
       <div class="panel"><div id="trend-chart" class="chart" aria-label="Evolución de la tasa de morosidad"></div><div id="trend-interpretation" class="chart-interpretation"></div></div>
     </section>
 
+    <section id="actualizacion" class="section tinted">
+      <div class="section-heading"><div><p class="eyebrow">02 · Actualización</p><h2>El perfil de pago llega hasta junio de 2025</h2></div><p>Comisión Ingresa publicó una caracterización más reciente de quienes están en etapa de pago. Este módulo actualiza el panorama nacional, pero no reemplaza el detalle comunal de 2023.</p></div>
+      <div class="metric-strip profile-strip"><article><span>Cuadros de pago analizados</span><strong id="profile-total">—</strong><small>Corte: junio de 2025</small></article><article><span>Egresados/as</span><strong id="profile-graduates">—</strong><small>77,5% del universo</small></article><article><span>Desertores/as</span><strong id="profile-dropouts">—</strong><small>22,5% del universo</small></article></div>
+      <details class="definitions"><summary>Cómo leer la actualización 2025</summary><dl><div><dt>Cuadro de pago</dt><dd>Registro de una persona beneficiaria cuyo crédito entró en etapa de cobro.</dd></div><div><dt>Al día</dt><dd>Persona sin cuotas morosas al corte informado por Comisión Ingresa.</dd></div><div><dt>Garantía ejecutada</dt><dd>Crédito cuyo incumplimiento activó el cobro de la garantía al Estado o a la institución de educación superior.</dd></div><div><dt>Cohorte</dt><dd>Generación de beneficiarios agrupada según su año de ingreso al sistema CAE.</dd></div></dl></details>
+      <div class="update-grid"><div class="panel"><h3>Situación de pago por trayectoria educativa</h3><p class="note">Indicadores separados; no deben sumarse entre sí como partes de un total.</p><div id="profile-payment-chart" class="chart tall"></div><div id="profile-interpretation" class="chart-interpretation"></div></div><div class="panel cohort-panel"><h3>Qué agrega el análisis por cohortes</h3><div class="cohort-findings"><article><b>La mora se acumula</b><p>Todas las cohortes aumentan su tasa de morosidad a medida que avanzan los años de pago.</p></article><article><b>Las generaciones recientes parten peor</b><p>Comienzan su trayectoria de pago con una tasa de mora inicial mayor.</p></article><article><b>El dato reciente exige cautela</b><p>Ingresa recomienda no concluir sobre las últimas cohortes porque aún no convergen a su comportamiento de largo plazo.</p></article></div><p class="source-note">Fuente: Comisión Ingresa, perfil de egresados y desertores (octubre de 2025) y análisis por cohortes (enero de 2026). Datos a junio de 2025.</p></div></div>
+    </section>
+
     <section id="territorio" class="section">
-      <div class="section-heading"><div><p class="eyebrow">02 · Territorio</p><h2>Una crisis nacional con intensidades locales</h2></div><p>Selecciona una región y una métrica. El mapa ubica consistentemente 339 de 341 registros comunales; los restantes permanecen en la tabla.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">03 · Territorio</p><h2>Una crisis nacional con intensidades locales</h2></div><p>Selecciona una región y una métrica. El mapa ubica consistentemente 339 de 341 registros comunales; los restantes permanecen en la tabla.</p></div>
       <div class="filters">
         <label>Región<select id="region-filter"><option value="ALL">Todo Chile</option></select></label>
         <label>Métrica del mapa<select id="metric-filter"><option value="tasa_morosidad_total">Tasa de morosidad total</option><option value="total_deudores_n">Total deudores/as</option><option value="total_al_dia_n">Personas al día</option><option value="total_morosos_n">Personas morosas</option><option value="tasa_morosidad_desertores">Morosidad de desertores</option><option value="tasa_morosidad_egresados">Morosidad de egresados</option><option value="ingreso_autonomo_promedio_hogar_clp">Ingreso promedio del hogar</option><option value="ingreso_autonomo_mediano_hogar_clp">Ingreso mediano del hogar</option><option value="tasa_pobreza_ingresos">Pobreza por ingresos</option></select></label>
       </div>
       <details class="definitions"><summary>Definiciones territoriales y cobertura</summary><dl>
-        <div><dt>Total deudores/as</dt><dd>Personas de la comuna que están en etapa de pago: suma de quienes están al día y en mora.</dd></div>
+        <div><dt>Total deudores/as</dt><dd>Total informado para la comuna en la publicación. En 45 filas la fuente no reconcilia exactamente este valor con la suma de personas al día y morosas.</dd></div>
         <div><dt>Al día</dt><dd>Personas sin cuotas morosas al corte de diciembre de 2023.</dd></div>
         <div><dt>Morosos/as</dt><dd>Personas con cuotas impagas al mismo corte.</dd></div>
         <div><dt>Ingreso autónomo promedio del hogar</dt><dd>Promedio del ingreso del hogar antes de transferencias monetarias del Estado. Disponible para 20 comunas seleccionadas del Gran Santiago.</dd></div>
@@ -60,18 +73,18 @@
         <div><dt>Pobreza por ingresos</dt><dd>Porcentaje de personas bajo la línea oficial de pobreza, según estimaciones comunales CASEN 2022 SAE.</dd></div>
       </dl></details>
       <div class="map-grid"><div class="panel map-panel"><div id="map-chart" class="chart map"></div><div id="map-interpretation" class="chart-interpretation"></div></div><div class="panel"><h3>Pobreza territorial y morosidad</h3><p class="note">Cruce ecológico comunal: describe territorios, no la situación socioeconómica individual de cada deudor.</p><div id="poverty-chart" class="chart compact"></div><div id="poverty-interpretation" class="chart-interpretation"></div></div></div>
-      <div class="panel table-panel"><div class="panel-title"><h3>Detalle comunal</h3><span id="commune-count"></span></div><div class="table-wrap"><table><thead><tr><th>Comuna</th><th>Región</th><th class="num">Total deudores/as</th><th class="num">Al día</th><th class="num">Morosos/as</th><th class="num">Tasa de morosidad</th><th class="num">Ingreso promedio</th><th class="num">Ingreso mediano</th><th class="num">Pobreza</th></tr></thead><tbody id="commune-table"></tbody></table></div><p class="table-footnote">Ingresos comunales: disponibles para 20 comunas seleccionadas del Gran Santiago; “s/d” indica que la publicación no entrega ese dato.</p></div>
+      <div class="panel table-panel"><div class="panel-title"><h3>Detalle comunal</h3><span id="commune-count"></span></div><div class="table-wrap"><table><thead><tr><th>Comuna</th><th>Región</th><th class="num">Total deudores/as</th><th class="num">Al día</th><th class="num">Morosos/as</th><th class="num">Tasa de morosidad</th><th class="num">Ingreso promedio</th><th class="num">Ingreso mediano</th><th class="num">Pobreza</th></tr></thead><tbody id="commune-table"></tbody></table></div><p class="table-footnote">Ingresos comunales: disponibles para 20 comunas seleccionadas del Gran Santiago; “s/d” indica que la publicación no entrega ese dato. Se conservan los valores originales: 45 filas no cumplen exactamente al día + morosos = total.</p></div>
     </section>
 
     <section id="instituciones" class="section tinted">
-      <div class="section-heading"><div><p class="eyebrow">03 · Instituciones</p><h2>La deuda también tiene una geografía institucional</h2></div><p>La concentración por institución permite observar dónde se acumulan deudores morosos y qué recursos CAE fueron recibidos.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">04 · Instituciones</p><h2>La deuda también tiene una geografía institucional</h2></div><p>La concentración por institución permite observar dónde se acumulan deudores morosos y qué recursos CAE fueron recibidos.</p></div>
       <div class="filters"><label>Tipo de institución<select id="ies-filter"><option value="ALL">Todas</option></select></label></div>
       <details class="definitions"><summary>Definiciones institucionales</summary><dl><div><dt>Recursos CAE recibidos</dt><dd>Valor de los créditos CAE asociados a estudiantes nuevos y renovantes de cada institución, expresado en millones de pesos de diciembre de 2023.</dd></div><div><dt>Tasa de morosidad institucional</dt><dd>Proporción de deudores/as morosos entre quienes estudiaron en la institución y están en etapa de pago.</dd></div><div><dt>Tipo de institución</dt><dd>Universidad, instituto profesional, centro de formación técnica u otra categoría publicada.</dd></div></dl></details>
       <div class="chart-grid"><div class="panel"><h3>Instituciones con más morosos/as</h3><div id="institution-bar" class="chart tall"></div><div id="institution-bar-interpretation" class="chart-interpretation"></div></div><div class="panel"><h3>Recursos recibidos y morosidad</h3><p class="note">El tamaño representa el número de personas morosas. Solo se muestran instituciones con cruce disponible.</p><div id="institution-scatter" class="chart tall"></div><div id="institution-scatter-interpretation" class="chart-interpretation"></div></div></div>
     </section>
 
     <section id="estado" class="section">
-      <div class="section-heading"><div><p class="eyebrow">04 · Estado y banca</p><h2>El riesgo privado fue sostenido con recursos públicos</h2></div><p>Las recompras de créditos y la recarga asociada muestran el costo fiscal de la garantía. Montos expresados en millones de pesos de diciembre de 2023.</p></div>
+      <div class="section-heading"><div><p class="eyebrow">05 · Estado y banca</p><h2>El riesgo privado fue sostenido con recursos públicos</h2></div><p>Las recompras de créditos y la recarga asociada muestran el costo fiscal de la garantía. Montos expresados en millones de pesos de diciembre de 2023.</p></div>
       <details class="definitions"><summary>Definiciones de Estado y banca</summary><dl>
         <div><dt>Créditos cursados</dt><dd>Créditos CAE otorgados originalmente por las instituciones financieras.</dd></div>
         <div><dt>Monto recomprado</dt><dd>Valor de créditos que el Fisco debió comprar a los bancos cuando las licitaciones no fueron cubiertas íntegramente por el sistema financiero.</dd></div>
@@ -79,17 +92,19 @@
         <div><dt>Valor pagado incluida recarga</dt><dd>Suma del monto recomprado y la recarga pagada con recursos fiscales.</dd></div>
         <div><dt>Tasa de recompra</dt><dd>Monto recomprado dividido por el monto total de créditos cursados por el banco.</dd></div>
       </dl></details>
+      <div class="metric-strip flow-strip"><article><span>Stock de deuda vigente</span><strong>$7,36 billones</strong><small>Foto a diciembre de 2023</small></article><article><span>Créditos cursados acumulados</span><strong id="flow-originated">—</strong><small>Flujo 2006–2023</small></article><article><span>Monto recomprado acumulado</span><strong id="flow-repurchased">—</strong><small>Flujo 2006–2023</small></article><article><span>Recarga acumulada</span><strong id="flow-surcharge">—</strong><small>Flujo 2006–2023</small></article></div>
+      <p class="note stock-flow-note"><b>Stock no es flujo:</b> el saldo vigente es una fotografía al cierre de 2023; los otros tres indicadores acumulan movimientos entre 2006 y 2023.</p>
       <div class="chart-grid"><div class="panel"><h3>Créditos cursados y recomprados por año</h3><div id="finance-chart" class="chart tall"></div><div id="finance-interpretation" class="chart-interpretation"></div></div><div class="panel"><h3>Recompras y recarga por banco</h3><div id="bank-chart" class="chart tall"></div><div id="bank-interpretation" class="chart-interpretation"></div></div></div>
     </section>
 
     <section id="metodologia" class="section methodology">
-      <div><p class="eyebrow">05 · Trazabilidad</p><h2>Qué sabemos y qué todavía no</h2><p>El tablero se construyó principalmente con tablas del estudio CAE 2024 de Fundación SOL, basadas en información de Comisión Ingresa, complementadas con fuentes oficiales. Cada indicador conserva página, fuente y fecha de corte.</p></div>
+      <div><p class="eyebrow">06 · Trazabilidad</p><h2>Qué sabemos y qué todavía no</h2><p>El tablero se construyó principalmente con tablas del estudio CAE 2024 de Fundación SOL, basadas en información de Comisión Ingresa, complementadas con fuentes oficiales. Cada indicador conserva página, fuente y fecha de corte.</p></div>
       <div class="method-grid">
         <article><b>Validación</b><strong id="quality-score">—</strong><p>controles automáticos de integridad, reconciliación y cobertura.</p></article>
         <article><b>Cobertura territorial</b><strong>339 / 341</strong><p>registros cartografiados. Antártica carece de geometría y “San Gregorio” aparece bajo una región inconsistente en la fuente.</p></article>
         <article><b>Límite clave</b><strong>30.659</strong><p>personas morosas sin región o comuna identificada en la publicación.</p></article>
       </div>
-      <div class="caveat"><b>Advertencia interpretativa</b><p>Los cruces de ingreso y pobreza son agregados territoriales. No permiten afirmar que una persona morosa específica sea pobre, ni estimar causalidad. La información pública disponible tampoco entrega microdatos individuales para cruzar simultáneamente deuda, género, edad, ingreso, pertenencia étnica y territorio.</p></div>
+      <div class="caveat"><b>Advertencia interpretativa y de calidad</b><p>Los cruces de ingreso y pobreza son agregados territoriales. No permiten afirmar que una persona morosa específica sea pobre, ni estimar causalidad. Además, 45 filas de la tabla comunal original presentan diferencias aritméticas entre total, personas al día y morosas; el dashboard conserva los valores publicados y no imputa correcciones.</p></div>
       <div class="downloads"><h3>Descargar datos por familia</h3><div class="download-grid">
         <a href="descargas/01_deuda_carga_financiera.zip">Deuda y carga financiera <span>ZIP</span></a>
         <a href="descargas/02_pago_morosidad_garantias.zip">Pago, morosidad y garantías <span>ZIP</span></a>
@@ -100,6 +115,7 @@
         <a href="descargas/07_series_historicas_politica.zip">Series históricas <span>ZIP</span></a>
         <a href="descargas/diccionario_maestro_variables.csv">Diccionario de variables <span>CSV</span></a>
         <a href="descargas/controles_calidad.csv">Controles de calidad <span>CSV</span></a>
+        <a href="descargas/perfil_pago_ingresa_2025.csv">Perfil de pago 2025 <span>CSV</span></a>
       </div></div>
       <details><summary>Fuentes verificadas</summary><div id="source-list" class="sources"></div></details>
     </section>
@@ -107,6 +123,6 @@
   <footer><p><b>Deuda Injusta</b> · Dashboard reproducible construido con datos públicos. <span id="updated"></span></p><a href="data/quality.json">Descargar control de calidad (JSON)</a></footer>
   <div id="error" role="alert" hidden></div>
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
-  <script src="app.js?v=2"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+{
+  "corte": "Junio de 2025",
+  "publicacion": "Octubre de 2025",
+  "cuadros_pago_n": 993046,
+  "egresados_n": 769404,
+  "desertores_n": 223642,
+  "situacion_pago": [
+    {"grupo": "Desertores/as", "al_dia_pct": 0.0709, "garantia_ejecutada_pct": 0.71},
+    {"grupo": "Egresados/as", "al_dia_pct": 0.3177, "garantia_ejecutada_pct": 0.5042}
+  ],
+  "hallazgos": {
+    "desertores_tecnologia_pct": 0.3013,
+    "egresados_salud_pct": 0.2499,
+    "desercion_ip_pct": 0.2722,
+    "desercion_cft_pct": 0.2651,
+    "egreso_ffaa_pct": 0.9397,
+    "egreso_cruch_pct": 0.8407
+  },
+  "cohortes": {
+    "ultima_cohorte_desercion_disponible": 2022,
+    "nota": "Las cohortes recientes aún no convergen a valores de largo plazo; la fuente recomienda no concluir sobre ellas.",
+    "tendencia": "Todas las cohortes aumentan su morosidad con el tiempo y las generaciones más recientes parten con una mora inicial mayor."
+  },
+  "fuente": "Comisión Ingresa, Análisis exploratorio del perfil de Egresados y Desertores, octubre de 2025; Análisis exploratorio del perfil por cohortes, enero de 2026",
+  "url": "https://portal.ingresa.cl/wp-content/uploads/2025/11/Minuta-Egresados-y-Desertores.pdf"
+}
