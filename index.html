@@ -42,7 +42,7 @@
 
     <section class="section two-col">
       <div class="section-intro"><p class="eyebrow">01 · Escala</p><h2>La morosidad se volvió estructural</h2><p>La serie publicada por Fundación SOL permite comparar desertores, egresados y total. La brecha entre trayectorias educativas es persistente, pero la morosidad no se limita a quienes desertaron.</p><details class="definitions"><summary>Definiciones de esta sección</summary><dl><div><dt>Desertor/a</dt><dd>Persona que dejó sus estudios sin obtener el título.</dd></div><div><dt>Egresado/a</dt><dd>Persona que concluyó su trayectoria educativa y se encuentra en etapa de pago.</dd></div><div><dt>Morosidad</dt><dd>Existencia de cuotas impagas; la tasa se calcula sobre quienes están en etapa de pago.</dd></div></dl></details><div class="insight"><b>Lectura política</b><p>Cuando cientos de miles incumplen bajo reglas comunes, la explicación no cabe en la conducta individual: hay que examinar el diseño del sistema.</p></div></div>
-      <div class="panel"><div id="trend-chart" class="chart" aria-label="Evolución de la tasa de morosidad"></div></div>
+      <div class="panel"><div id="trend-chart" class="chart" aria-label="Evolución de la tasa de morosidad"></div><div id="trend-interpretation" class="chart-interpretation"></div></div>
     </section>
 
     <section id="territorio" class="section">
@@ -59,7 +59,7 @@
         <div><dt>Ingreso autónomo mediano del hogar</dt><dd>Valor que divide a los hogares en dos mitades: 50% recibe menos y 50% más. Disponible para las mismas 20 comunas.</dd></div>
         <div><dt>Pobreza por ingresos</dt><dd>Porcentaje de personas bajo la línea oficial de pobreza, según estimaciones comunales CASEN 2022 SAE.</dd></div>
       </dl></details>
-      <div class="map-grid"><div class="panel map-panel"><div id="map-chart" class="chart map"></div></div><div class="panel"><h3>Pobreza territorial y morosidad</h3><p class="note">Cruce ecológico comunal: describe territorios, no la situación socioeconómica individual de cada deudor.</p><div id="poverty-chart" class="chart compact"></div></div></div>
+      <div class="map-grid"><div class="panel map-panel"><div id="map-chart" class="chart map"></div><div id="map-interpretation" class="chart-interpretation"></div></div><div class="panel"><h3>Pobreza territorial y morosidad</h3><p class="note">Cruce ecológico comunal: describe territorios, no la situación socioeconómica individual de cada deudor.</p><div id="poverty-chart" class="chart compact"></div><div id="poverty-interpretation" class="chart-interpretation"></div></div></div>
       <div class="panel table-panel"><div class="panel-title"><h3>Detalle comunal</h3><span id="commune-count"></span></div><div class="table-wrap"><table><thead><tr><th>Comuna</th><th>Región</th><th class="num">Total deudores/as</th><th class="num">Al día</th><th class="num">Morosos/as</th><th class="num">Tasa de morosidad</th><th class="num">Ingreso promedio</th><th class="num">Ingreso mediano</th><th class="num">Pobreza</th></tr></thead><tbody id="commune-table"></tbody></table></div><p class="table-footnote">Ingresos comunales: disponibles para 20 comunas seleccionadas del Gran Santiago; “s/d” indica que la publicación no entrega ese dato.</p></div>
     </section>
 
@@ -67,7 +67,7 @@
       <div class="section-heading"><div><p class="eyebrow">03 · Instituciones</p><h2>La deuda también tiene una geografía institucional</h2></div><p>La concentración por institución permite observar dónde se acumulan deudores morosos y qué recursos CAE fueron recibidos.</p></div>
       <div class="filters"><label>Tipo de institución<select id="ies-filter"><option value="ALL">Todas</option></select></label></div>
       <details class="definitions"><summary>Definiciones institucionales</summary><dl><div><dt>Recursos CAE recibidos</dt><dd>Valor de los créditos CAE asociados a estudiantes nuevos y renovantes de cada institución, expresado en millones de pesos de diciembre de 2023.</dd></div><div><dt>Tasa de morosidad institucional</dt><dd>Proporción de deudores/as morosos entre quienes estudiaron en la institución y están en etapa de pago.</dd></div><div><dt>Tipo de institución</dt><dd>Universidad, instituto profesional, centro de formación técnica u otra categoría publicada.</dd></div></dl></details>
-      <div class="chart-grid"><div class="panel"><h3>Instituciones con más morosos/as</h3><div id="institution-bar" class="chart tall"></div></div><div class="panel"><h3>Recursos recibidos y morosidad</h3><p class="note">El tamaño representa el número de personas morosas. Solo se muestran instituciones con cruce disponible.</p><div id="institution-scatter" class="chart tall"></div></div></div>
+      <div class="chart-grid"><div class="panel"><h3>Instituciones con más morosos/as</h3><div id="institution-bar" class="chart tall"></div><div id="institution-bar-interpretation" class="chart-interpretation"></div></div><div class="panel"><h3>Recursos recibidos y morosidad</h3><p class="note">El tamaño representa el número de personas morosas. Solo se muestran instituciones con cruce disponible.</p><div id="institution-scatter" class="chart tall"></div><div id="institution-scatter-interpretation" class="chart-interpretation"></div></div></div>
     </section>
 
     <section id="estado" class="section">
@@ -79,7 +79,7 @@
         <div><dt>Valor pagado incluida recarga</dt><dd>Suma del monto recomprado y la recarga pagada con recursos fiscales.</dd></div>
         <div><dt>Tasa de recompra</dt><dd>Monto recomprado dividido por el monto total de créditos cursados por el banco.</dd></div>
       </dl></details>
-      <div class="chart-grid"><div class="panel"><h3>Créditos cursados y recomprados por año</h3><div id="finance-chart" class="chart tall"></div></div><div class="panel"><h3>Recompras y recarga por banco</h3><div id="bank-chart" class="chart tall"></div></div></div>
+      <div class="chart-grid"><div class="panel"><h3>Créditos cursados y recomprados por año</h3><div id="finance-chart" class="chart tall"></div><div id="finance-interpretation" class="chart-interpretation"></div></div><div class="panel"><h3>Recompras y recarga por banco</h3><div id="bank-chart" class="chart tall"></div><div id="bank-interpretation" class="chart-interpretation"></div></div></div>
     </section>
 
     <section id="metodologia" class="section methodology">
