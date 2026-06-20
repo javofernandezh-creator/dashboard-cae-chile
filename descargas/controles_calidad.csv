@@ -1,0 +1,35 @@
+﻿control,resultado,evidencia,severidad_si_falla,confianza
+Suma anual reconcilia con total: creditos_cursados_n,APROBADO,"calculado=4,216,234; publicado=4,216,234; diferencia=0 (tablas redondeadas a MM$)",Alta,Alta
+Suma anual reconcilia con total: monto_creditos_cursados_mm_clp_dic2023,APROBADO,"calculado=9,825,776; publicado=9,825,776; diferencia=0 (tablas redondeadas a MM$)",Alta,Alta
+Suma anual reconcilia con total: creditos_recomprados_n,APROBADO,"calculado=2,163,598; publicado=2,163,598; diferencia=0 (tablas redondeadas a MM$)",Alta,Alta
+Suma anual reconcilia con total: monto_recomprado_mm_clp_dic2023,APROBADO,"calculado=5,788,785; publicado=5,788,786; diferencia=-1 (tablas redondeadas a MM$)",Alta,Alta
+Suma anual reconcilia con total: valor_pagado_incl_recarga_mm_clp_dic2023,APROBADO,"calculado=7,254,623; publicado=7,254,623; diferencia=0 (tablas redondeadas a MM$)",Alta,Alta
+Suma anual reconcilia con total: recarga_mm_clp_dic2023,APROBADO,"calculado=1,465,836; publicado=1,465,837; diferencia=-1 (tablas redondeadas a MM$)",Alta,Alta
+Monto por bancos reconcilia con total anual,APROBADO,"bancos=9,825,776; anual=9,825,776",Alta,Alta
+Recompra por bancos reconcilia con total anual,APROBADO,"bancos=5,788,786; anual=5,788,786",Alta,Alta
+Saldos por situación reconcilian: saldo_desertores_mm_clp,APROBADO,"componentes=1,145,939; total=1,145,940; diferencia=-1 (tablas redondeadas a MM$)",Alta,Alta
+Saldos por situación reconcilian: saldo_egresados_mm_clp,APROBADO,"componentes=6,212,311; total=6,212,310; diferencia=1 (tablas redondeadas a MM$)",Alta,Alta
+Saldos por situación reconcilian: saldo_total_mm_clp,APROBADO,"componentes=7,358,250; total=7,358,250; diferencia=0 (tablas redondeadas a MM$)",Alta,Alta
+Al día + mora = total (Desertor/a),APROBADO,"21,576+164,137=185,713",Alta,Alta
+Denominador tasa morosidad (Desertor/a),APROBADO,calculada=0.8838; publicada=0.8840,Alta,Alta
+Al día + mora = total (Egresado/a),APROBADO,"284,509+375,476=659,985",Alta,Alta
+Denominador tasa morosidad (Egresado/a),APROBADO,calculada=0.5689; publicada=0.5690,Alta,Alta
+Al día + mora = total (Total),APROBADO,"306,085+539,613=845,698",Alta,Alta
+Denominador tasa morosidad (Total),APROBADO,calculada=0.6381; publicada=0.6380,Alta,Alta
+Garantías ejecutadas + no ejecutadas = morosos (Desertor/a),APROBADO,"26,764+137,373=164,137",Alta,Alta
+Garantías ejecutadas + no ejecutadas = morosos (Egresado/a),APROBADO,"102,570+272,906=375,476",Alta,Alta
+Garantías ejecutadas + no ejecutadas = morosos (Total),APROBADO,"129,334+410,279=539,613",Alta,Alta
+Suma regional reconcilia con total territorial publicado,APROBADO,"regiones=508,954; total territorial=508,954",Alta,Alta
+Casos sin región/comuna identificados,APROBADO,"nacional=539,613; territorial=508,954; sin especificar=30,659",Media,Alta
+Unicidad tabla pago comunal,APROBADO,filas=341; duplicados=0,Alta,Alta
+Unicidad tabla morosidad comunal,APROBADO,filas=341; duplicados=0,Alta,Alta
+Totales comunales reconcilian con regiones,APROBADO,regiones comparadas=16; diferencias=0,Alta,Alta
+Cobertura de unión pago-morosidad comunal,APROBADO,"{'both': 341, 'left_only': 0, 'right_only': 0}",Alta,Alta
+Tasas comunales dentro de 0-100%,APROBADO,"columnas revisadas=['tasa_morosidad_desertores', 'tasa_morosidad_egresados', 'tasa_morosidad_total', 'tasa_pobreza_ingresos']",Alta,Alta
+Unicidad morosidad por institución,APROBADO,instituciones=112; duplicados=0,Alta,Alta
+Unicidad recursos por institución,APROBADO,instituciones=123; duplicados=0,Alta,Alta
+Cobertura cruce morosidad-recursos IES,APROBADO,cobertura=95.5%,Media,Alta
+Total créditos cotejado directamente con PDF fuente,APROBADO,"PDF=9,825,776; CSV=9,825,776",Alta,Alta
+Saldo total cotejado directamente con PDF fuente,APROBADO,"PDF=7,358,250; CSV=7,358,250",Alta,Alta
+Morosos cotejados directamente con PDF fuente,APROBADO,"PDF=539,613; CSV=539,613",Alta,Alta
+Cobertura cartográfica comunal,APROBADO,"con geometría=339; datos comunales=341; sin geometría o región inconsistente=['ANTARTICA', 'SANGREGORIO']",Media,Alta
