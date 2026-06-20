@@ -1,4 +1,6 @@
-# Dashboard público CAE
+# Deuda Injusta — Radiografía pública del CAE
+
+**No hay pago justo ante una deuda injusta.**
 
 Sitio estático reproducible. Contiene los JSON, el GeoJSON y las descargas CSV/ZIP; la biblioteca de gráficos se carga desde el CDN oficial de Plotly.
 
