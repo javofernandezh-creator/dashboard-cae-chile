@@ -1,0 +1,18 @@
+[
+  {"region":"Arica y Parinacota","tasa_pobreza_ingresos_2024":0.214332,"ingreso_autonomo_promedio_hogar_clp_2024":1200748,"tasa_morosidad_cae_2023":0.711,"morosos_cae_n_2023":6802},
+  {"region":"Tarapacá","tasa_pobreza_ingresos_2024":0.208098,"ingreso_autonomo_promedio_hogar_clp_2024":1430926,"tasa_morosidad_cae_2023":0.666,"morosos_cae_n_2023":5823},
+  {"region":"Antofagasta","tasa_pobreza_ingresos_2024":0.163877,"ingreso_autonomo_promedio_hogar_clp_2024":1640396,"tasa_morosidad_cae_2023":0.655,"morosos_cae_n_2023":8456},
+  {"region":"Atacama","tasa_pobreza_ingresos_2024":0.185774,"ingreso_autonomo_promedio_hogar_clp_2024":1279468,"tasa_morosidad_cae_2023":0.658,"morosos_cae_n_2023":4097},
+  {"region":"Coquimbo","tasa_pobreza_ingresos_2024":0.20674,"ingreso_autonomo_promedio_hogar_clp_2024":1111284,"tasa_morosidad_cae_2023":0.657,"morosos_cae_n_2023":17651},
+  {"region":"Valparaíso","tasa_pobreza_ingresos_2024":0.17789,"ingreso_autonomo_promedio_hogar_clp_2024":1236410,"tasa_morosidad_cae_2023":0.648,"morosos_cae_n_2023":46104},
+  {"region":"Metropolitana","tasa_pobreza_ingresos_2024":0.133408,"ingreso_autonomo_promedio_hogar_clp_2024":1882236,"tasa_morosidad_cae_2023":0.613,"morosos_cae_n_2023":222634},
+  {"region":"O'Higgins","tasa_pobreza_ingresos_2024":0.17855,"ingreso_autonomo_promedio_hogar_clp_2024":1132312,"tasa_morosidad_cae_2023":0.619,"morosos_cae_n_2023":25959},
+  {"region":"Maule","tasa_pobreza_ingresos_2024":0.243408,"ingreso_autonomo_promedio_hogar_clp_2024":893886,"tasa_morosidad_cae_2023":0.631,"morosos_cae_n_2023":32326},
+  {"region":"Ñuble","tasa_pobreza_ingresos_2024":0.238984,"ingreso_autonomo_promedio_hogar_clp_2024":968350,"tasa_morosidad_cae_2023":0.617,"morosos_cae_n_2023":980},
+  {"region":"Biobío","tasa_pobreza_ingresos_2024":0.192736,"ingreso_autonomo_promedio_hogar_clp_2024":1190036,"tasa_morosidad_cae_2023":0.668,"morosos_cae_n_2023":70160},
+  {"region":"La Araucanía","tasa_pobreza_ingresos_2024":0.285906,"ingreso_autonomo_promedio_hogar_clp_2024":908238,"tasa_morosidad_cae_2023":0.672,"morosos_cae_n_2023":25525},
+  {"region":"Los Ríos","tasa_pobreza_ingresos_2024":0.222701,"ingreso_autonomo_promedio_hogar_clp_2024":1089772,"tasa_morosidad_cae_2023":0.681,"morosos_cae_n_2023":12027},
+  {"region":"Los Lagos","tasa_pobreza_ingresos_2024":0.16477,"ingreso_autonomo_promedio_hogar_clp_2024":1148900,"tasa_morosidad_cae_2023":0.674,"morosos_cae_n_2023":25130},
+  {"region":"Aysén","tasa_pobreza_ingresos_2024":0.143337,"ingreso_autonomo_promedio_hogar_clp_2024":1477882,"tasa_morosidad_cae_2023":0.654,"morosos_cae_n_2023":1789},
+  {"region":"Magallanes","tasa_pobreza_ingresos_2024":0.099403,"ingreso_autonomo_promedio_hogar_clp_2024":1607808,"tasa_morosidad_cae_2023":0.665,"morosos_cae_n_2023":3491}
+]

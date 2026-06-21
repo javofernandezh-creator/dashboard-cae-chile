@@ -1,0 +1,10 @@
+{
+  "summary":{"checks_total":5,"checks_passed":5,"checks_failed":0,"assessment":"APROBADO CON ADVERTENCIAS DE COMPARABILIDAD"},
+  "checks":[
+    {"control":"Cobertura regional CASEN 2024","resultado":"APROBADO","evidencia":"16 regiones únicas con pobreza e ingreso autónomo promedio"},
+    {"control":"Cruce regional CAE-CASEN","resultado":"APROBADO","evidencia":"16 de 16 regiones enlazadas por nombre legible"},
+    {"control":"Saldos 2022-2023 reconcilian","resultado":"APROBADO","evidencia":"saldo al día + saldo en mora = saldo total en ambos cortes"},
+    {"control":"Concentración institucional reconcilia","resultado":"APROBADO","evidencia":"109 instituciones suman 539.613 personas morosas"},
+    {"control":"Escenario contable de condonación reconcilia","resultado":"APROBADO","evidencia":"$2,712 billones al día + $4,646 billones en mora = $7,358 billones"}
+  ]
+}

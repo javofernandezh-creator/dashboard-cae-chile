@@ -1,0 +1,6 @@
+{
+  "concentracion_instituciones":{"universo_morosos_n":539613,"instituciones_n":109,"top10_morosos_n":316530,"top10_participacion":0.586587},
+  "concentracion_bancos":{"monto_recomprado_total_mm_clp_dic2023":5788786,"top3_monto_recomprado_mm_clp_dic2023":4920869,"top3_participacion":0.850069},
+  "distribucion_comunal_morosidad":{"p10":0.563,"p25":0.617,"mediana":0.657,"p75":0.7,"p90":0.765,"comunas_n":341},
+  "condonacion_universal":{"personas_etapa_pago_n":845698,"saldo_bruto_clp":7358250000000,"saldo_mora_clp":4645883000000,"saldo_al_dia_clp":2712367000000,"saldo_promedio_bruto_por_persona_clp":8700801,"participacion_saldo_mora":0.631384,"corte":"Diciembre de 2023","nota":"Magnitud contable bruta; no equivale automáticamente al costo fiscal neto de una política de condonación."}
+}
