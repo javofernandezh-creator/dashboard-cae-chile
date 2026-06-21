@@ -2,7 +2,7 @@
 
 **No hay pago justo ante una deuda injusta.**
 
-Sitio estático reproducible. Contiene los JSON, el GeoJSON y las descargas CSV/ZIP; la biblioteca de gráficos se carga desde el CDN oficial de Plotly.
+Sitio estático auditable. Contiene los JSON, el GeoJSON y las descargas CSV/ZIP; la biblioteca de gráficos se carga desde el CDN oficial de Plotly. Los extractos conservan fuente y página, pero el repositorio todavía no incluye un pipeline completo de extracción desde los documentos originales.
 
 ## Vista local
 
@@ -21,6 +21,7 @@ Subir el contenido completo de `dashboard_publico` a cualquier hosting estático
 ## Corte y limitaciones
 
 - Indicadores estructurados principales: diciembre de 2023.
-- 35 de 35 controles de calidad aprobados.
+- 40 controles automáticos ejecutados entre integridad, reconciliación y cobertura; su aprobación no equivale a certificación externa.
 - 339 de 341 registros comunales se cartografían de forma consistente.
 - Los cruces socioeconómicos son agregados territoriales; no constituyen microdatos individuales ni permiten inferencia causal.
+- 45 filas comunales no cumplen exactamente `al día + morosos = total`; se conservan los valores publicados y se muestran ambos denominadores agregados.

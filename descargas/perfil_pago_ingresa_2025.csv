@@ -1,3 +1,3 @@
-grupo,cuadros_pago_n,al_dia_pct,garantia_ejecutada_pct,corte,fuente
-Desertores/as,223642,0.0709,0.71,2025-06,"Comisión Ingresa, Perfil de Egresados y Desertores 2025"
-Egresados/as,769404,0.3177,0.5042,2025-06,"Comisión Ingresa, Perfil de Egresados y Desertores 2025"
+grupo,cuadros_pago_n,deuda_saldada_pct,al_dia_pct,una_dos_cuotas_impagas_pct,tres_mas_cuotas_mora_pct,garantia_ejecutada_pct,mora_amplia_pct,corte,fuente,pagina_figura
+Desertores/as,223642,0.0764,0.0709,0.0071,0.1356,0.71,0.8527,2025-06,"Comisión Ingresa, Perfil de Egresados y Desertores 2025","pp. 6-7; Figura 9"
+Egresados/as,769404,0.0536,0.3177,0.0235,0.1011,0.5042,0.6288,2025-06,"Comisión Ingresa, Perfil de Egresados y Desertores 2025","pp. 6-7; Figura 10"

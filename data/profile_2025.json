@@ -5,8 +5,14 @@
   "egresados_n": 769404,
   "desertores_n": 223642,
   "situacion_pago": [
-    {"grupo": "Desertores/as", "al_dia_pct": 0.0709, "garantia_ejecutada_pct": 0.71},
-    {"grupo": "Egresados/as", "al_dia_pct": 0.3177, "garantia_ejecutada_pct": 0.5042}
+    {"grupo":"Desertores/as","deuda_saldada_pct":0.0764,"al_dia_pct":0.0709,"una_dos_cuotas_impagas_pct":0.0071,"tres_mas_cuotas_mora_pct":0.1356,"garantia_ejecutada_pct":0.71},
+    {"grupo":"Egresados/as","deuda_saldada_pct":0.0536,"al_dia_pct":0.3177,"una_dos_cuotas_impagas_pct":0.0235,"tres_mas_cuotas_mora_pct":0.1011,"garantia_ejecutada_pct":0.5042}
+  ],
+  "quintiles": [
+    {"quintil":"Quintiles 1 y 2","desertores_pct":0.5834,"egresados_pct":0.5174,"tasa_desercion":0.2468,"tasa_egreso":0.7532},
+    {"quintil":"Quintil 3","desertores_pct":0.1751,"egresados_pct":0.1844,"tasa_desercion":0.2163,"tasa_egreso":0.7837},
+    {"quintil":"Quintil 4","desertores_pct":0.1535,"egresados_pct":0.1798,"tasa_desercion":0.1988,"tasa_egreso":0.8012},
+    {"quintil":"Quintil 5","desertores_pct":0.088,"egresados_pct":0.1184,"tasa_desercion":0.1777,"tasa_egreso":0.8223}
   ],
   "hallazgos": {
     "desertores_tecnologia_pct": 0.3013,
